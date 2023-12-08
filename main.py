@@ -122,7 +122,7 @@ import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
 fig.set_size_inches(30, 10)
 fig.set_dpi(100)
-fig.suptitle("Live Vocal Mel Spectrogram - Original")
+fig.suptitle("现场演出人声梅尔频谱图 - 未修正")
 img = librosa.display.specshow(
     librosa.power_to_db(live_mel, ref=np.max), y_axis="mel", x_axis="time", ax=ax, sr=processing_sample_rate, hop_length=hop_size, fmin=0, fmax=processing_sample_rate / 2, win_length=window_size
 )
